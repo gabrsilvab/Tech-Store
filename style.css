@@ -1,0 +1,239 @@
+body {
+    background-color: #faedff; /* Cor de fundo do corpo */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+.head {
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+.head a {
+    text-decoration: none;
+    color: white;
+}
+
+.d1 {
+    display: flex; /* Torna a div flexível */
+    flex-direction: column; /* Elementos organizados verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: flex-start; /* Alinha os itens no topo verticalmente */
+    margin-top: 50px; /* Controle da posição vertical da div inteira */
+}
+
+.d1-text {
+    font-family: "Poppins", serif; /* Fonte personalizada */
+    font-size: 32px; /* Tamanho do texto */
+    margin: 0; /* Remove margens extras */
+    height: 10vh; /* Altura ajustável para o primeiro texto */
+    display: flex; /* Torna o texto um flex container */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    font-weight: 300; /* Peso da fonte */
+}
+
+.d1-text2 {
+    font-family: "Poppins", serif; /* Fonte personalizada */
+    font-size: 41px; /* Tamanho do texto */
+    margin: 0; /* Remove margens extras */
+    height: 4vh; /* Altura ajustável para o segundo texto */
+    display: flex; /* Torna o texto um flex container */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    font-weight: 500; /* Peso da fonte */
+}
+
+.d1-img {
+    max-width: 100%; /* Faz com que a imagem não ultrapasse o container */
+    height: 62vh; /* Altura ajustável para a imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste proporcionalmente */
+    margin-top: 10px; /* Ajusta a posição vertical da imagem (espaçamento superior) */
+    margin-bottom: 20px; /* Ajusta a posição vertical da imagem (espaçamento inferior) */
+    position: relative; /* Permite ajustes com propriedades como top/left */
+    top: -20px; /* Controle da posição da imagem para subir/descer */
+}
+
+.d1-button {
+    font-family: "Poppins", serif; /* Fonte personalizada */
+    width: 220px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno */
+    color: #fff; /* Cor do texto */
+    background: #111; /* Cor de fundo do botão */
+    cursor: pointer; /* Muda o cursor para "pointer" ao passar o mouse */
+    position: relative; /* Define o posicionamento relativo */
+    z-index: 0; /* Nível de empilhamento */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-top: 40px; /* Adiciona espaçamento acima do botão */
+}
+
+.d1-button:before {
+    content: ''; /* Cria um elemento visual antes do botão */
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); /* Gradiente animado */
+    position: absolute; /* Posicionamento absoluto dentro do botão */
+    top: -2px; /* Posição superior */
+    left: -2px; /* Posição à esquerda */
+    background-size: 400%; /* Tamanho do gradiente */
+    z-index: -1; /* Fica atrás do botão */
+    filter: blur(5px); /* Aplica um desfoque */
+    width: calc(100% + 4px); /* Largura maior que o botão */
+    height: calc(100% + 4px); /* Altura maior que o botão */
+    animation: glowing 20s linear infinite; /* Animação infinita */
+    opacity: 0; /* Invisível por padrão */
+    transition: opacity .3s ease-in-out; /* Transição suave da opacidade */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.d1-button:active {
+    color: #000; /* Cor do texto quando o botão é clicado */
+}
+
+.d1-button:active:after {
+    background: transparent; /* Remove o fundo ao clicar */
+}
+
+.d1-button:hover:before {
+    opacity: 1; /* Gradiente aparece ao passar o mouse */
+}
+
+.d1-button:after {
+    z-index: -1; /* Fica atrás do botão */
+    content: ''; /* Cria um elemento visual */
+    position: absolute; /* Posicionamento absoluto dentro do botão */
+    width: 100%; /* Largura total do botão */
+    height: 100%; /* Altura total do botão */
+    background: #111; /* Fundo preto */
+    left: 0; /* Posição inicial à esquerda */
+    top: 0; /* Posição inicial no topo */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; } /* Início da animação */
+    50% { background-position: 400% 0; } /* Meio da animação */
+    100% { background-position: 0 0; } /* Fim da animação */
+}
+
+
+
+
+body {
+    background-color: #faedff; /* Cor de fundo do corpo */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+.d2 {
+    display: flex; /* Torna a div flexível */
+    flex-direction: column; /* Elementos organizados verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: flex-start; /* Alinha os itens no topo verticalmente */
+    margin-top: 50px; /* Controle da posição vertical da div inteira */
+}
+
+.d2-text {
+    font-family: "Poppins", serif; /* Fonte personalizada */
+    font-size: 32px; /* Tamanho do texto */
+    margin: 0; /* Remove margens extras */
+    height: 10vh; /* Altura ajustável para o primeiro texto */
+    display: flex; /* Torna o texto um flex container */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    font-weight: 300; /* Peso da fonte */
+}
+
+.d2-text2 {
+    font-family: "Poppins", serif; /* Fonte personalizada */
+    font-size: 41px; /* Tamanho do texto */
+    margin: 0; /* Remove margens extras */
+    height: 4vh; /* Altura ajustável para o segundo texto */
+    display: flex; /* Torna o texto um flex container */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    font-weight: 500; /* Peso da fonte */
+}
+
+.d2-img {
+    max-width: 100%; /* Faz com que a imagem não ultrapasse o container */
+    height: 62vh; /* Altura ajustável para a imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste proporcionalmente */
+    margin-top: 10px; /* Ajusta a posição vertical da imagem (espaçamento superior) */
+    margin-bottom: 20px; /* Ajusta a posição vertical da imagem (espaçamento inferior) */
+    position: relative; /* Permite ajustes com propriedades como top/left */
+    top: -20px; /* Controle da posição da imagem para subir/descer */
+}
+
+.d2-button {
+    font-family: "Poppins", serif; /* Fonte personalizada */
+    width: 220px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno */
+    color: #fff; /* Cor do texto */
+    background: #111; /* Cor de fundo do botão */
+    cursor: pointer; /* Muda o cursor para "pointer" ao passar o mouse */
+    position: relative; /* Define o posicionamento relativo */
+    z-index: 0; /* Nível de empilhamento */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-top: 40px; /* Adiciona espaçamento acima do botão */
+}
+
+.d2-button:before {
+    content: ''; /* Cria um elemento visual antes do botão */
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); /* Gradiente animado */
+    position: absolute; /* Posicionamento absoluto dentro do botão */
+    top: -2px; /* Posição superior */
+    left: -2px; /* Posição à esquerda */
+    background-size: 400%; /* Tamanho do gradiente */
+    z-index: -1; /* Fica atrás do botão */
+    filter: blur(5px); /* Aplica um desfoque */
+    width: calc(100% + 4px); /* Largura maior que o botão */
+    height: calc(100% + 4px); /* Altura maior que o botão */
+    animation: glowing 20s linear infinite; /* Animação infinita */
+    opacity: 0; /* Invisível por padrão */
+    transition: opacity .3s ease-in-out; /* Transição suave da opacidade */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.d2-button:active {
+    color: #000; /* Cor do texto quando o botão é clicado */
+}
+
+.d2-button:active:after {
+    background: transparent; /* Remove o fundo ao clicar */
+}
+
+.d2-button:hover:before {
+    opacity: 1; /* Gradiente aparece ao passar o mouse */
+}
+
+.d2-button:after {
+    z-index: -1; /* Fica atrás do botão */
+    content: ''; /* Cria um elemento visual */
+    position: absolute; /* Posicionamento absoluto dentro do botão */
+    width: 100%; /* Largura total do botão */
+    height: 100%; /* Altura total do botão */
+    background: #111; /* Fundo preto */
+    left: 0; /* Posição inicial à esquerda */
+    top: 0; /* Posição inicial no topo */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; } /* Início da animação */
+    50% { background-position: 400% 0; } /* Meio da animação */
+    100% { background-position: 0 0; } /* Fim da animação */
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}

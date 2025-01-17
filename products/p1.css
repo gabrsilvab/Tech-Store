@@ -1,0 +1,121 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    overflow: hidden; /* Remove o scroll geral */
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Parte esquerda */
+.left-section {
+    flex: 1;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto; /* Scroll independente vertical */
+    padding: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.product-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Lista de especificações */
+.specifications {
+    list-style: none;
+    padding: 0;
+}
+
+.specifications li {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.specifications li i {
+    margin-right: 10px;
+    color: #f39c12; /* Cor dos ícones */
+}
+
+/* Parte direita */
+.right-section {
+    flex: 1;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto; /* Scroll independente vertical */
+    padding: 20px;
+}
+
+.pricing {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pricing p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.shipping {
+    margin-bottom: 20px;
+}
+
+.shipping p {
+    font-size: 16px;
+}
+
+.add-to-cart {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #444;
+}

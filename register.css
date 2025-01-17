@@ -1,0 +1,71 @@
+body {
+    background-color: #faedff;
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+}
+
+.text {
+    font-family: "Poppins", serif;
+    color: black;
+}
+    
+.login-container {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #040008;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.MenssagemErro {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #040008;
+    text-decoration: none;
+}
+
+.cadastro {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.cadastro a {
+    text-decoration: none;
+    color: #986de3;
+}
